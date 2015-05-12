@@ -1,5 +1,6 @@
 package com.gx303.alllogin;
 
+import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends baseActivity {
 
     Button btn_zhizhu;
     @Override
@@ -146,14 +147,7 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     };
-    public void L(String s)
-    {
-        Log.e("Unity",s);
-    }
-    public void T(String s)
-    {
-        Toast.makeText(getApplicationContext(),s,Toast.LENGTH_SHORT).show();
-    }
+
     /*
     知乎app无法反编译出res
      */
@@ -162,5 +156,16 @@ public class MainActivity extends ActionBarActivity {
         initZhihu();
         pop_zhihu.showAtLocation(btn_zhizhu, Gravity.CENTER,0,0);
 
+    }
+    /*
+    qq登录
+    qq登录界面，有意思的地方在于弹出输入法后，界面上移的处理
+    关键在于：把不需要显示的layout设置成为0高度，用weight设置高度的layout，这样子，需要显示的layout就会显示，不需要显示的会被隐藏
+     */
+    public void qq_login(View v)
+    {
+        Intent it_qqLogin=new Intent();
+        it_qqLogin.setClass(getApplicationContext(),qqlogin.class);
+        startActivity(it_qqLogin);
     }
 }

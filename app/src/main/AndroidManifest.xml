@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".qqlogin"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:label="@string/title_activity_qqlogin" >
+        </activity>
     </application>
 
 </manifest>

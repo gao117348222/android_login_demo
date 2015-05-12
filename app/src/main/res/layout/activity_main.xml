@@ -10,11 +10,25 @@
         android:layout_height="fill_parent"
         android:id="@+id/scrollView" >
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="知乎"
-            android:id="@+id/btn_zhizhu"
-            android:onClick="zhihuLogin" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="知乎"
+                android:id="@+id/btn_zhizhu"
+                android:onClick="zhihuLogin" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ"
+                android:id="@+id/button2"
+                android:onClick="qq_login" />
+        </LinearLayout>
     </ScrollView>
+
 </RelativeLayout>

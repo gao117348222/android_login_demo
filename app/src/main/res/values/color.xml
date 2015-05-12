@@ -4,4 +4,6 @@
     <color name="zhihu_button_confirm_unclick">#B2B2B2</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="qq_login_normal">#1FBAF3</color>
+    <color name="qq_login_press">#1BA7DA</color>
 </resources>
