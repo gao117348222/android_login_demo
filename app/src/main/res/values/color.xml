@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zhihu_lay_click">#81CFEB</color>
+    <color name="zhihu_button_confirm_unclick">#B2B2B2</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
