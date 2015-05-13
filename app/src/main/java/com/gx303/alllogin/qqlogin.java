@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -177,6 +178,22 @@ public class qqlogin extends baseActivity {
         ly_qq_2.setOnClickListener(view_ime_dismissListener);
         ly_qq_3.setOnClickListener(view_ime_dismissListener);
         ly_qq_4.setOnClickListener(view_ime_dismissListener);
+
+
+        //点击忘记密码，弹出忘记密码popupwindows
+        tv_qq_forgetpsw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                initPopForgetPsw();
+                pop_forgetpsw.showAtLocation(v, Gravity.CENTER,0,0);
+            }
+        });
+        tv_qq_new.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                T("新用户");
+            }
+        });
     }
     View.OnClickListener view_ime_dismissListener=new View.OnClickListener() {
         @Override
@@ -227,6 +244,53 @@ public class qqlogin extends baseActivity {
 
                 }
             });
+        }
+    }
+
+    PopupWindow pop_forgetpsw;//忘记密码popupwindows
+    LinearLayout lay_pop_forgetpsw_zhmm;//找回密码
+    LinearLayout lay_pop_forgetpsw_dxyzdl;//短信验证登录
+    LinearLayout lay_pop_forgetpsw_cancel;//取消
+    RelativeLayout lay_pop_forgetpsw_back;
+    public void initPopForgetPsw()
+    {
+        if(pop_forgetpsw==null)
+        {
+            View view=getLayoutInflater().inflate(R.layout.qq_forget_psw_pop,null);
+            lay_pop_forgetpsw_zhmm=(LinearLayout)view.findViewById(R.id.lay_zhmm);
+            lay_pop_forgetpsw_dxyzdl=(LinearLayout)view.findViewById(R.id.lay_dxyz);
+            lay_pop_forgetpsw_cancel=(LinearLayout)view.findViewById(R.id.lay_cancel);
+            lay_pop_forgetpsw_back=(RelativeLayout)view.findViewById(R.id.main_back);
+            pop_forgetpsw=new PopupWindow(view,LinearLayout.LayoutParams.FILL_PARENT,LinearLayout.LayoutParams.FILL_PARENT);
+            pop_forgetpsw.setFocusable(true);
+            lay_pop_forgetpsw_back.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    pop_forgetpsw.dismiss();
+                }
+            });
+            lay_pop_forgetpsw_zhmm.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    T("找回密码");
+                    pop_forgetpsw.dismiss();
+                }
+            });
+            lay_pop_forgetpsw_dxyzdl.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    T("短信验证登录");
+                    pop_forgetpsw.dismiss();
+                }
+            });
+            lay_pop_forgetpsw_cancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    pop_forgetpsw.dismiss();
+                }
+            });
+
+
         }
     }
 
