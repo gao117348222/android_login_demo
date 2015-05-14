@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gx303.alllogin.tblogin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff9f9f9">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/tblogin_top_left"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淘宝账户登录"
+            android:id="@+id/tb_login_top_tv"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffeeeeee"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tblogin_layout_circle"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tb_login_login_lay">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="账户"
+                    android:id="@+id/textView10"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tb_login_et_account"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="手机号/会员名/邮箱"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:imeOptions="actionNext"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tb_login_iv_account_del"
+                    android:src="@drawable/tb_login_et_del"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffeeeeee"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="登录密码"
+                    android:id="@+id/textView11"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/tb_login_et_psw"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:imeOptions="actionDone"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tb_login_iv_psw_del"
+                    android:layout_toLeftOf="@+id/tb_login_iv_psw_see"
+                    android:src="@drawable/tb_login_et_del"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tb_login_iv_psw_see"
+                    android:src="@drawable/tb_login_see"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb_login_login_lay"
+            android:id="@+id/tb_login_login_button_lay"
+            android:background="#ffff5000"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:id="@+id/tb_login_login_tv_lay"
+                android:textSize="20dp"
+                android:textColor="#EE8561"
+                android:layout_margin="10dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb_login_login_button_lay"
+
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快速注册"
+                android:id="@+id/tv_kszc"
+                android:textColor="#5F646E" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找回密码"
+                android:id="@+id/tv_zhmm"
+                android:textColor="#5F646E" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 #集合android各大app登录界面
 >知乎
 >QQ
+>淘宝
 
 知乎的登陆，就一个popupwindows
 
@@ -16,3 +17,7 @@ QQ的主要是输入法出现界面上移的问题
 
 ![4](https://git.oschina.net/gaoxiang303/android_login_demo/raw/master/pic/QQ3.png)
 
+
+淘宝的没啥大门道，原淘宝BUG：账号输入的下一个点击无效，密码输入的完成没有处理。
+
+![5](https://git.oschina.net/gaoxiang303/android_login_demo/raw/master/pic/tb1.png)

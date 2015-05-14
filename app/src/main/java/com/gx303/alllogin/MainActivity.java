@@ -168,4 +168,14 @@ public class MainActivity extends baseActivity {
         it_qqLogin.setClass(getApplicationContext(),qqlogin.class);
         startActivity(it_qqLogin);
     }
+    /*
+    淘宝登陆的
+     */
+    public void opentblogin(View v)
+    {
+
+        Intent it_tblogin=new Intent();
+        it_tblogin.setClass(getApplicationContext(),tblogin.class);
+        startActivity(it_tblogin);
+    }
 }

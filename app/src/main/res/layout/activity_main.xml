@@ -28,6 +28,13 @@
                 android:text="QQ"
                 android:id="@+id/button2"
                 android:onClick="qq_login" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="淘宝"
+                android:id="@+id/button"
+                android:onClick="opentblogin" />
         </LinearLayout>
     </ScrollView>
 

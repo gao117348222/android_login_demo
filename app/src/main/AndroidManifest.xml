@@ -18,8 +18,12 @@
         </activity>
         <activity
             android:name=".qqlogin"
-            android:windowSoftInputMode="adjustResize|stateHidden"
-            android:label="@string/title_activity_qqlogin" >
+            android:label="@string/title_activity_qqlogin"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".tblogin"
+            android:label="@string/title_activity_tblogin" >
         </activity>
     </application>
 
