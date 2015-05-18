@@ -26,5 +26,7 @@ QQ的主要是输入法出现界面上移的问题
 
 ![5](https://git.oschina.net/gaoxiang303/android_login_demo/raw/master/pic/tb1.png)
 
+
 支付宝的自带键盘没想通怎么做
+
 ![6](https://git.oschina.net/gaoxiang303/android_login_demo/raw/master/pic/zfb1.png)
