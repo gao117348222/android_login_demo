@@ -35,6 +35,13 @@
                 android:text="淘宝"
                 android:id="@+id/button"
                 android:onClick="opentblogin" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝钱包"
+                android:id="@+id/button3"
+                android:onClick="openZFBQB" />
         </LinearLayout>
     </ScrollView>
 

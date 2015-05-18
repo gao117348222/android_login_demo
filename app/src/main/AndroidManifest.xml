@@ -25,6 +25,12 @@
             android:name=".tblogin"
             android:label="@string/title_activity_tblogin" >
         </activity>
+        <activity
+            android:name=".zfbqb"
+            android:label="@string/title_activity_zfbqb"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            >
+        </activity>
     </application>
 
 </manifest>

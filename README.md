@@ -2,6 +2,7 @@
 >知乎
 >QQ
 >淘宝
+>支付宝
 
 
 ------
@@ -24,3 +25,6 @@ QQ的主要是输入法出现界面上移的问题
 淘宝的没啥大门道，原淘宝BUG：账号输入的下一个点击无效，密码输入的完成没有处理。
 
 ![5](https://git.oschina.net/gaoxiang303/android_login_demo/raw/master/pic/tb1.png)
+
+支付宝的自带键盘没想通怎么做
+![6](https://git.oschina.net/gaoxiang303/android_login_demo/raw/master/pic/zfb1.png)

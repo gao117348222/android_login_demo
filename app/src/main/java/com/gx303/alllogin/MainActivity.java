@@ -178,4 +178,13 @@ public class MainActivity extends baseActivity {
         it_tblogin.setClass(getApplicationContext(),tblogin.class);
         startActivity(it_tblogin);
     }
+    /*
+    打开支付宝钱包
+     */
+    public void  openZFBQB(View v)
+    {
+        Intent it_zfb=new Intent();
+        it_zfb.setClass(getApplicationContext(),zfbqb.class);
+        startActivity(it_zfb);
+    }
 }
