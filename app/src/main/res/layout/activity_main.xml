@@ -42,6 +42,13 @@
                 android:text="支付宝钱包"
                 android:id="@+id/button3"
                 android:onClick="openZFBQB" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信"
+                android:id="@+id/button4"
+                android:onClick="openWXLogin" />
         </LinearLayout>
     </ScrollView>
 

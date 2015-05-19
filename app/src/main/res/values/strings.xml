@@ -6,4 +6,5 @@
     <string name="title_activity_qqlogin">qqlogin</string>
     <string name="title_activity_tblogin">tblogin</string>
     <string name="title_activity_zfbqb">zfbqb</string>
+    <string name="title_activity_wx_login">WxLogin</string>
 </resources>

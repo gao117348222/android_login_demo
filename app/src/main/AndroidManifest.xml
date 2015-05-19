@@ -28,8 +28,11 @@
         <activity
             android:name=".zfbqb"
             android:label="@string/title_activity_zfbqb"
-            android:windowSoftInputMode="adjustResize|stateHidden"
-            >
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".WxLogin"
+            android:label="@string/title_activity_wx_login" >
         </activity>
     </application>
 

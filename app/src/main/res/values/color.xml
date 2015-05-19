@@ -6,4 +6,9 @@
     <color name="white">#FFFFFF</color>
     <color name="qq_login_normal">#1FBAF3</color>
     <color name="qq_login_press">#1BA7DA</color>
+    <color name="wx_top_left_normal">#ff22292c</color>
+    <color name="wx_top_left_press">#181D1F</color>
+    <color name="wx_login_cantpress">#A2E08D</color>
+    <color name="wx_login_normal">#45C01A</color>
+    <color name="wx_login_press">#298409</color>
 </resources>

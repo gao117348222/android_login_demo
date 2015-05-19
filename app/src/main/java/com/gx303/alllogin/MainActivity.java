@@ -187,4 +187,13 @@ public class MainActivity extends baseActivity {
         it_zfb.setClass(getApplicationContext(),zfbqb.class);
         startActivity(it_zfb);
     }
+    /*
+    打开微信登陆
+     */
+    public void openWXLogin(View v)
+    {
+        Intent it_wx=new Intent();
+        it_wx.setClass(getApplicationContext(),WxLogin.class);
+        startActivity(it_wx);
+    }
 }
